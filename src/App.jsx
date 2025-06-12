@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './componentes/Layout';
 import Home from './screens/Home';
-// import PersonaDetalle from './components/PersonaDetalle'
-// import Estadisticas from './components/Estadisticas'
-// import Contacto from './pages/Contacto'
-// import NotFound from './pages/NotFound'
+import PersonaDetalle from './componentes/PersonaDetalle'
+import Estadisticas from './componentes/Estadisticas'
+// import Contacto from './screens/Contacto'
+// import NotFound from './screens/NotFound'
 
 function App() {
   return (
@@ -12,9 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* Otras rutas: */}
-          {/* <Route path="persona/:id" element={<PersonaDetalle />} /> */}
-          {/* <Route path="estadisticas" element={<Estadisticas />} /> */}
+          <Route path="persona/:id" element={<PersonaDetalle />} />
+          <Route path="estadisticas" element={<Estadisticas />} />
           {/* <Route path="contacto" element={<Contacto />} /> */}
           {/* <Route path="*" element={<NotFound />} /> */}
         </Route>
