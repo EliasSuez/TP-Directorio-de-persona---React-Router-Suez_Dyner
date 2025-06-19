@@ -3,8 +3,8 @@ import Layout from './componentes/Layout';
 import Home from './screens/Home';
 import PersonaDetalle from './componentes/PersonaDetalle'
 import Estadisticas from './componentes/Estadisticas'
-// import Contacto from './screens/Contacto'
-// import NotFound from './screens/NotFound'
+import Formulario from './componentes/Formulario';
+import NotFound from './componentes/NotFound'
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="persona/:id" element={<PersonaDetalle />} />
           <Route path="estadisticas" element={<Estadisticas />} />
-          {/* <Route path="contacto" element={<Contacto />} /> */}
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="contacto" element={<Formulario />} /> 
+          <Route path="*" element={<NotFound />} /> 
         </Route>
       </Routes>
     </BrowserRouter>
