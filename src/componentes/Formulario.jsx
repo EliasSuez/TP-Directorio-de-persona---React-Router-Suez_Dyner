@@ -49,8 +49,8 @@ function FormularioContacto() {
 
   return (
     <div style={{
-      maxWidth: 800,
-      margin: '2rem auto',
+      width: '90%',
+      marginTop: '10rem',
       padding: '1.5rem',
       backgroundColor: '#f9fafb',
       borderRadius: '8px',
@@ -78,7 +78,7 @@ function FormularioContacto() {
             value={form.nombre}
             onChange={manejarCambio}
             style={{
-              width: '100%',
+              width: '95%',
               padding: '0.5rem',
               borderRadius: '4px',
               border: errors.nombre ? '1.5px solid red' : '1px solid #ccc'
@@ -98,7 +98,7 @@ function FormularioContacto() {
             value={form.apellido}
             onChange={manejarCambio}
             style={{
-              width: '100%',
+              width: '95%',
               padding: '0.5rem',
               borderRadius: '4px',
               border: errors.apellido ? '1.5px solid red' : '1px solid #ccc'
@@ -118,7 +118,7 @@ function FormularioContacto() {
             value={form.email}
             onChange={manejarCambio}
             style={{
-              width: '100%',
+              width: '95%',
               padding: '0.5rem',
               borderRadius: '4px',
               border: errors.email ? '1.5px solid red' : '1px solid #ccc'
@@ -138,7 +138,7 @@ function FormularioContacto() {
             value={form.edad}
             onChange={manejarCambio}
             style={{
-              width: '100%',
+              width: '95%',
               padding: '0.5rem',
               borderRadius: '4px',
               border: errors.edad ? '1.5px solid red' : '1px solid #ccc'

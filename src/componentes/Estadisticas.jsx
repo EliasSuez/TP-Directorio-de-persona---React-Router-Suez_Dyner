@@ -11,7 +11,7 @@ function Estadisticas() {
   return (
     <div style={{
       maxWidth: 600,
-      margin: '2rem auto',
+      margin: '3rem auto',
       padding: '1.5rem 2rem',
       backgroundColor: '#f9fafb',
       borderRadius: '8px',
@@ -25,12 +25,7 @@ function Estadisticas() {
         color: '#1a73e8',
         fontWeight: '700'
       }}>Estadísticas</h2>
-      <ul style={{
-        listStyle: 'none',
-        padding: 0,
-        fontSize: '1.1rem',
-        lineHeight: '1.6'
-      }}>
+      <ul style={{}}>
         <li style={{ marginBottom: '1rem' }}>
           <strong>Total de personas:</strong> {cantPersonas}
         </li>
@@ -42,7 +37,6 @@ function Estadisticas() {
           <ul style={{
             marginTop: '0.5rem',
             paddingLeft: '1rem',
-            backgroundColor: '#dbeafe',
             borderRadius: '6px'
           }}>
             {mayoresArray.map(p => (
@@ -57,7 +51,7 @@ function Estadisticas() {
           <ul style={{
             marginTop: '0.5rem',
             paddingLeft: '1rem',
-            backgroundColor: '#fee2e2',
+            color: 'red',
             borderRadius: '6px'
           }}>
             {menoresArray.map(p => (

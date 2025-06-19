@@ -15,9 +15,14 @@ function Nav() {
 
   return (
     <nav style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
       padding: '1rem',
-      borderBottom: '2px solid #ddd',
       backgroundColor: '#f9f9f9',
+      borderBottom: '2px solid #ddd',
+      zIndex: 1000,
     }}>
       <NavLink to="/" style={({ isActive }) => isActive ? { ...linkStyle, ...activeStyle } : linkStyle}>
         Inicio
