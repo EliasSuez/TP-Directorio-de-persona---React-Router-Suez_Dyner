@@ -5,7 +5,7 @@ function Layout() {
   return (
     <>
       <Nav />
-      <main style={{ padding: '1rem' }}>
+        <main style={{ padding: '1rem' }}>
         <Outlet />
       </main>
     </>
